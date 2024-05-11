@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
-# Start Apache so as to return a
-# page conatining Hello Holberton
-service apache2 start
+#!/bin/bash
+# Sends a request to that URL, and displays the size of the body of the response
+curl -s "${1}" | wc -c
