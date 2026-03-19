@@ -1,7 +1,12 @@
 #!/usr/bin/node
 
-// ['C is fun', 'Python is cool', 'JavaScript is amazing'].forEach((e) => console.log(e));
-
 const msg = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+let output = '';
 
-msg.forEach((element) => console.log(element));
+for (let i = 0; i < msg.length; i++) {
+  output += msg[i];
+  if (i !== msg.length - 1) {
+    output += '\n';
+  }
+}
+console.log(output);
